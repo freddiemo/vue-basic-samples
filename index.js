@@ -1,8 +1,7 @@
-var app = new Vue({
-    el: '#app',
-    data: {
-        message: 'Hello Vue!'
-    }
-});
+Vue.component('todo-item', {
+    template: '<li>This is a todo</li>'
+})
 
-app.message = 'I have changed the data!'
+var app = new Vue({
+    el: '#app'
+});
